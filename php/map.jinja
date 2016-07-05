@@ -31,6 +31,36 @@
         'temp_dir': '/tmp',
         'composer_bin': 'composer',
     },
+        'Ubuntu': {
+        'php_pkg': 'php7.0',
+        'apc_pkg': 'php7.0-apc', ## NO
+        'apcu_pkg': 'php7.0-apcu', ## NO
+        'cli_pkg': 'php7.0-cli',
+        'curl_pkg': 'php7.0-curl',
+        'fpm_pkg': 'php7.0-fpm',
+        'fpm_service': 'php7.0-fpm',
+        'gd_pkg': 'php7.0-gd',
+        'intl_pkg': 'php7.0-intl',
+        'json_pkg': 'php7.0-json',
+        'mcrypt_pkg': 'php7.0-mcrypt',
+        'memcache_pkg': 'php7.0-memcached', ## NO
+        'memcached_pkg': 'php7.0-memcached', ## NO
+        'mysql_pkg': 'php7.0-mysql',
+        'mbstring_pkg': 'php7.0-mbstring',
+        'readline_pkg': ' php7.0-readline',
+        'redis_pkg': 'php7.0-redis', ## NO
+        'xml_pkg': 'php7.0-xml',
+        'imagick_pkg': 'php7.0-imagick', ## NO
+        'suhosin_pkg': 'php7.0-suhosin',
+        'pgsql_pkg': 'php7.0-pgsql',
+        'dev_pkg': 'php7.0-dev',
+        'zip_pkg': 'php7.0-zip',
+        'php_ini': '/etc/php7.0/apache2/php.ini',
+        'sqlite_pkg': 'php7.0-sqlite3',
+        'local_bin': '/usr/local/bin',
+        'temp_dir': '/tmp',
+        'composer_bin': 'composer',
+    },
 }, merge=salt['pillar.get']('php:lookup')) %}
 
 {% else %}
